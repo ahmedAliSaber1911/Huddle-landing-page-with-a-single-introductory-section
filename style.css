@@ -1,0 +1,131 @@
+:root{
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-color: var(--Violet);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.title{
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0 0 50px 50px ;
+    font-weight: 600;
+    
+}
+.left{
+    width: 52vw;
+    background-image: url(./images/illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-position: bottom  left 50px;
+    height: 91vh;
+}
+.right{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 170px;
+    position: relative;
+}
+.header{
+    color: white;
+    font-size:45px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+.text{
+    color: white;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+button{
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    color: var(--Violet);
+    font-size: 18px;
+    background-color: white;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.icons{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius:50% ;
+    border: 1px solid white;
+}
+i{
+    color: white ;    
+    font-size: 25px;
+    margin-top: 5px;
+}
+.icon:hover{
+    border: 1px solid var(--Soft-Magenta);
+}
+i:hover{
+    color: var(--Soft-Magenta);
+}
+
+/* start of the media  */
+@media screen and (max-width:756px) {
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Violet);
+        flex-direction: column;
+    }
+    .left{
+    background-image: url(./images/illustration-mockups.svg);
+    width: 100%;
+    padding: 20px;
+    }
+    .right{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+    .text{
+        text-align: center;
+    }
+    .header{
+        font-size: 30px;
+        text-align: center;
+    }
+    button{
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+   
+}
